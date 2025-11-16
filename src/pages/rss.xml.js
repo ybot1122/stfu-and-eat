@@ -3,7 +3,7 @@ import { SITE } from "@consts";
 import { getCollection } from "astro:content";
 
 export async function GET(context) {
-  const blog = (await getCollection("recipes")).filter(
+  const recipes = (await getCollection("recipes")).filter(
     (post) => !post.data.draft,
   );
 
@@ -11,7 +11,7 @@ export async function GET(context) {
     title: SITE.TITLE,
     description: SITE.DESCRIPTION,
     site: context.site,
-    items: blog.map((item) => ({
+    items: recipes.map((item) => ({
       title: item.data.title,
       description: item.data.description,
       pubDate: item.data.date,
