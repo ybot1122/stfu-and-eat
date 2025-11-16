@@ -41,20 +41,19 @@ To change the website metadata, edit `src/consts.ts`.
 
 export const SITE: Site = {
   NAME: "STFU and EAT",
-  DESCRIPTION: "STFU and EAT is a no-nonsense recipe blog that optimizes for macros and flavor.",
+  DESCRIPTION:
+    "STFU and EAT is a no-nonsense recipe blog that optimizes for macros and flavor.",
   EMAIL: "trevortylerlee@gmail.com",
-  NUM_POSTS_ON_HOMEPAGE: 3,
-  NUM_PROJECTS_ON_HOMEPAGE: 3,
+  NUM_POSTS_ON_HOMEPAGE: 5,
 };
 ```
 
-| Field        | Req | Description                                          |
-| :----------- | :-- | :--------------------------------------------------- |
-| TITLE        | Yes | Displayed in header and footer. Used in SEO and RSS. |
-| DESCRIPTION  | Yes | Used in SEO and RSS.                                 |
-| EMAIL        | Yes | Displayed in contact section.                        |
-| NUM_POSTS    | Yes | Limit number of posts on home page.                  |
-| NUM_PROJECTS | Yes | Limit number of projects on home page.               |
+| Field       | Req | Description                                          |
+| :---------- | :-- | :--------------------------------------------------- |
+| TITLE       | Yes | Displayed in header and footer. Used in SEO and RSS. |
+| DESCRIPTION | Yes | Used in SEO and RSS.                                 |
+| EMAIL       | Yes | Displayed in contact section.                        |
+| NUM_POSTS   | Yes | Limit number of posts on home page.                  |
 
 ---
 
@@ -65,7 +64,8 @@ export const SITE: Site = {
 
 export const ABOUT: Metadata = {
   TITLE: "About",
-  DESCRIPTION: "STFU and EAT is a no-nonsense recipe blog that optimizes for macros and flavor.",
+  DESCRIPTION:
+    "STFU and EAT is a no-nonsense recipe blog that optimizes for macros and flavor.",
 };
 ```
 
