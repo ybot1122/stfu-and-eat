@@ -4,7 +4,7 @@ export const SITE: Site = {
   TITLE: "STFU and EAT",
   DESCRIPTION:
     "A no-nonsense recipe blog that optimizes for macros and flavor.",
-  EMAIL: "trevortylerlee@gmail.com",
+  EMAIL: "ybotuil2211@gmail.com",
   NUM_POSTS_ON_HOMEPAGE: 5,
   NUM_PROJECTS_ON_HOMEPAGE: 3,
 };
@@ -27,15 +27,7 @@ export const PROJECTS: Metadata = {
 
 export const SOCIALS: Socials = [
   {
-    NAME: "X (formerly Twitter)",
-    HREF: "https://twitter.com/boogerbuttcheek",
-  },
-  {
-    NAME: "GitHub",
-    HREF: "https://github.com/trevortylerlee",
-  },
-  {
-    NAME: "Website",
-    HREF: "https://trevortylerlee.com",
+    NAME: "Facebook",
+    HREF: "https://www.facebook.com/toby.liu.18/",
   },
 ];

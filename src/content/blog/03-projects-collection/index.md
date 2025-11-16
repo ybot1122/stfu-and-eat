@@ -33,7 +33,8 @@ title: "STFU and EAT";
 description: "STFU and EAT is a no-nonsense recipe blog that optimizes for macros and flavor.";
 date: "2024-03-20";
 draft: false;
-```
+
+````
 ```astro
 ---
 title: "STFU and EAT";
@@ -41,7 +42,7 @@ description: "STFU and EAT is a no-nonsense recipe blog that optimizes for macro
 date: "2024-03-20";
 draft: false;
 ---
-```
+````
 
 | Field       | Req | Type    | Remarks                                          |
 | :---------- | :-- | :------ | :----------------------------------------------- |
@@ -60,6 +61,7 @@ title: "STFU and EAT";
 description: "STFU and EAT is a no-nonsense recipe blog that optimizes for macros and flavor";
 date: "2024-03-20";
 draft: false;
+
 ```astro
 ---
 title: "STFU and EAT";
@@ -68,6 +70,6 @@ date: "2024-03-20";
 draft: false;
 ---
 
-## STFU and EAT 🔬
+## STFU and EAT
 <!-- content -->
 ```
