@@ -1,20 +1,20 @@
 ---
-title: "Astro Micro"
-description: "Astro Micro is an accessible and lightweight blog."
+title: "STFU and EAT"
+description: "A no-nonsense recipe blog that optimizes for macros and flavor."
 date: "2024-05-26"
 demoURL: "https://astro-micro.vercel.app"
 repoURL: "https://github.com/trevortylerlee/astro-micro"
 ---
 
-![Astro Micro](/astro-micro.jpg)
+![STFU and EAT](/astro-micro.jpg)
 
-Astro Micro is an accessible theme for Astro. It's a fork of Mark Horn's popular theme Astro Nano. Like Nano, Micro comes with zero frameworks installed.
+STFU and EAT is a no-nonsense recipe blog that optimizes for macros and flavor. We share straightforward, macro-balanced recipes designed to be both nutritious and delicious.
 
-Micro adds features like [Pagefind](https://pagefind.app) for search, [Giscus](https://giscus.app) for comments, and more. For a full list of changes, see this [blog post](/blog/00-micro-changelog).
+The site includes features like [Pagefind](https://pagefind.app) for search and [Giscus](https://giscus.app) for comments. For a full list of updates, see this [blog post](/blog/00-micro-changelog).
 
-Micro still comes with everything great about Nano — full type safety, a sitemap, an RSS feed, and Markdown + MDX support. Styled with TailwindCSS and preconfigured with system, light, and dark themes.
+STFU and EAT provides helpful tooling — a sitemap, an RSS feed, and Markdown + MDX support. Styled with TailwindCSS and supporting system, light, and dark themes.
 
-Visit [Astro Micro on Github](https://github.com/trevortylerlee/astro-micro) to get started.
+Visit [STFU and EAT on Github](https://github.com/trevortylerlee/astro-micro) to view the repository.
 
 ## 🚀 Deploy your own
 

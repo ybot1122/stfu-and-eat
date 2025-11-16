@@ -29,10 +29,15 @@ In the above example, two project posts will be generated with the folder name r
 
 ## Provide metadata
 
+title: "STFU and EAT";
+description: "STFU and EAT is a no-nonsense recipe blog that optimizes for macros and flavor.";
+date: "2024-03-20";
+draft: false;
+```
 ```astro
 ---
-title: "Astro Micro";
-description: "Astro Micro is an accessible theme for Astro.";
+title: "STFU and EAT";
+description: "STFU and EAT is a no-nonsense recipe blog that optimizes for macros and flavor.";
 date: "2024-03-20";
 draft: false;
 ---
@@ -51,14 +56,18 @@ draft: false;
 
 All that's left to do is write the content under the metadata.
 
+title: "STFU and EAT";
+description: "STFU and EAT is a no-nonsense recipe blog that optimizes for macros and flavor";
+date: "2024-03-20";
+draft: false;
 ```astro
 ---
-title: "Astro Micro";
-description: "Astro Micro is an accessible theme for Astro";
+title: "STFU and EAT";
+description: "STFU and EAT is a no-nonsense recipe blog that optimizes for macros and flavor";
 date: "2024-03-20";
 draft: false;
 ---
 
-## Astro Micro 🔬
+## STFU and EAT 🔬
 <!-- content -->
 ```

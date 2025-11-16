@@ -8,16 +8,16 @@ tags:
 
 ---
 
-## Install astro-micro
+## Install the project
 
-Clone the [Astro Micro repository](https://github.com/trevortylerlee/astro-micro.git).
+Clone the repository (display name changed):
 
 ```sh
-git clone https://github.com/trevortylerlee/astro-micro.git my-astro-micro
+git clone https://github.com/trevortylerlee/astro-micro.git my-stfu-and-eat
 ```
 
 ```sh
-cd my-astro-micro
+cd my-stfu-and-eat
 ```
 
 ```sh
@@ -40,8 +40,8 @@ To change the website metadata, edit `src/consts.ts`.
 // src/consts.ts
 
 export const SITE: Site = {
-  NAME: "Astro Micro",
-  DESCRIPTION: "Astro Micro is an accessible theme for Astro.",
+  NAME: "STFU and EAT",
+  DESCRIPTION: "STFU and EAT is a no-nonsense recipe blog that optimizes for macros and flavor.",
   EMAIL: "trevortylerlee@gmail.com",
   NUM_POSTS_ON_HOMEPAGE: 3,
   NUM_PROJECTS_ON_HOMEPAGE: 3,
@@ -65,7 +65,7 @@ export const SITE: Site = {
 
 export const ABOUT: Metadata = {
   TITLE: "About",
-  DESCRIPTION: "Astro Micro is a fork of Astro Nano.",
+  DESCRIPTION: "STFU and EAT is a no-nonsense recipe blog that optimizes for macros and flavor.",
 };
 ```
 
