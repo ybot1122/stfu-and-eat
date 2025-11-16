@@ -2,6 +2,7 @@
 title: "Getting started"
 description: "Hit the ground running."
 date: "2024-03-22"
+draft: true
 tags:
   - tutorial
 ---
@@ -107,12 +108,7 @@ export const SOCIALS: Socials = [
 To set up RSS and Giscus, it's easier if the site is deployed and has a URL for you to use. Instantly deploy to Vercel or Netlify by clicking the buttons below.
 
 <div class="flex gap-2">
-  <a target="_blank" aria-label="Deploy with Vercel" href="https://vercel.com/new/clone?repository-url=https://github.com/trevortylerlee/astro-micro">
-    <img src="/deploy_vercel.svg" />
-  </a>
-  <a target="_blank" aria-label="Deploy with Netlify" href="https://app.netlify.com/start/deploy?repository=https://github.com/trevortylerlee/astro-micro">
-    <img src="/deploy_netlify.svg" />
-  </a>
+<h2>Hello world</h2>
 </div>
 
 To deploy manually see [Astro's docs](https://docs.astro.build/en/guides/deploy/).
@@ -120,20 +116,6 @@ To deploy manually see [Astro's docs](https://docs.astro.build/en/guides/deploy/
 ## Set up RSS
 
 Change the `site` option to the deployed site's URL.
-
-```js
-// astro.config.mjs
-
-export default defineConfig({
-  site: "https://astro-micro.vercel.app",
-  integrations: [tailwind(), sitemap(), mdx(), pagefind()],
-  markdown: {
-    shikiConfig: {
-      theme: "css-variables",
-    },
-  },
-});
-```
 
 ## Set up Giscus
 
