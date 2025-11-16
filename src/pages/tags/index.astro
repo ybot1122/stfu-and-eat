@@ -3,8 +3,8 @@ import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
 
-const posts = await getCollection("blog", ({ data }) => !data.draft);
-const tags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort();
+const recipes = await getCollection("recipes", ({ data }) => !data.draft);
+const tags = [...new Set(recipes.flatMap((post) => post.data.tags || []))].sort();
 ---
 
 <Layout title="Tags" description="List of tags used.">
@@ -20,7 +20,7 @@ const tags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort();
             >
               {tag}{" "}
               <span class="text-sm text-gray-600">
-                ({posts.filter((post) => post.data.tags?.includes(tag)).length})
+                ({recipes.filter((post) => post.data.tags?.includes(tag)).length})
               </span>
             </a>
           ))
