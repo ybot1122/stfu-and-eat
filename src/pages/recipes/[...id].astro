@@ -88,6 +88,16 @@ const { Content, headings } = await render(post);
     </div>
     {headings.length > 0 && <TableOfContents headings={headings} />}
     <article class="animate">
+      <section>
+        <h2 id="ingredients">Ingredients</h2>
+        <ul>
+          {post.data.ingredients.map(([amount, unit, name]) => (
+            <li class="ml-6 list-disc marker:text-black py-1.5 text-sm">
+              {amount} {unit} {name}
+            </li>
+          ))}
+        </ul>
+      </section>
       <Content />
       <div class="mt-24">
         <PostNavigation prevPost={prevPost} nextPost={nextPost} />

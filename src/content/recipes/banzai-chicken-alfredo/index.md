@@ -9,7 +9,7 @@ tags:
   - alfredo
   - creamy
 ingredients:
-  - [4, 'oz', 'BanzBanza Chickpea Rotini']
+  - [4, 'oz', 'Banza Chickpea Rotini']
   - [2, 'tbsp', 'Butter']
   - [1, 'cup', 'milk']
 ---

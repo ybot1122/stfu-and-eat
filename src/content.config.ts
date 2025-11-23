@@ -1,7 +1,18 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
-const unit = z.enum(["g", "kg", "ml", "l", "tsp", "tbsp", "cup", "oz", "lb"]);
+const unit = z.enum([
+  "g",
+  "kg",
+  "ml",
+  "l",
+  "tsp",
+  "tbsp",
+  "cup",
+  "oz",
+  "lb",
+  "",
+]);
 
 const recipes = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/recipes" }),
