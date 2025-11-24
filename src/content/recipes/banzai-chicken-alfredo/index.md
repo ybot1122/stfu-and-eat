@@ -14,7 +14,7 @@ ingredients:
   - [1, 'cup', 'milk']
 ---
 
-## Instructions:
+## Instructions
 1. Start a pot of boiling water, add dash of salt and a bit of olive oil to help the noodles not stick together.
 2. Once water is boiling, add Banzai noodles. Cook for 8 minutes, stirring occasionally.
 3. Drain the noodles, and set aside. Let it cool down at room temperature.
