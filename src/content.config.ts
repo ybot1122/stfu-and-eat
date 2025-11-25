@@ -23,6 +23,7 @@ const recipes = defineCollection({
     draft: z.boolean().optional(),
     tags: z.array(z.string()).optional(),
     ingredients: z.array(z.tuple([z.number(), unit, z.string()])),
+    instructions: z.array(z.tuple([z.string(), z.string().optional()])),
   }),
 });
 

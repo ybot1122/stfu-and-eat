@@ -8,6 +8,7 @@ import BackToPrevious from "@components/BackToPrevious.astro";
 import PostNavigation from "@components/PostNavigation.astro";
 import TableOfContents from "@components/TableOfContents.astro";
 import Giscus from "@components/Giscus.astro";
+import ExpandableImage from "@components/ExpandableImage.astro";
 
 export async function getStaticPaths() {
   const posts = (await getCollection("recipes"))
@@ -94,6 +95,17 @@ const { Content, headings } = await render(post);
           {post.data.ingredients.map(([amount, unit, name]) => (
             <li class="ml-6 list-disc marker:text-black py-1.5 text-sm">
               {amount} {unit} {name}
+            </li>
+          ))}
+        </ul>
+      </section>
+      <section>
+        <h2 id="instructions">Instructions</h2>
+        <ul>
+          {post.data.instructions.map(([instr, img]) => (
+            <li class="ml-6 list-disc marker:text-black py-1.5 text-sm">
+              {instr}
+              {img && <ExpandableImage src={img} alt={instr} />}
             </li>
           ))}
         </ul>
