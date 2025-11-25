@@ -36,6 +36,12 @@ function buildToc(headings: Heading[]) {
   >
   <nav>
     <ul class="py-3">
+       <TableOfContentsHeading heading={{
+        depth: 1,
+        slug: 'ingredients',
+        text: 'Ingredients',
+        subheadings: []
+       }} />
       {toc.map((heading) => <TableOfContentsHeading heading={heading} />)}
     </ul>
   </nav>
