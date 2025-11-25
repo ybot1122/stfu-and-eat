@@ -152,7 +152,7 @@ const { Content, headings } = await render(post);
 
           function updateImages() {
             images.forEach((img) => {
-              img.style.display = imagesHidden ? 'none' : '';
+              (img as HTMLDivElement).style.display = imagesHidden ? 'none' : '';
             });
           }
 
