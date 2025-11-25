@@ -99,17 +99,80 @@ const { Content, headings } = await render(post);
           ))}
         </ul>
       </section>
-      <section>
-        <h2 id="instructions">Instructions</h2>
-        <ul>
+      <section id="instructions">
+        <div class="flex items-center gap-3">
+          <h2>Instructions</h2>
+          <button
+            id="toggle-images-btn"
+            type="button"
+            class="rounded-sm border border-black/15 px-2 mt-5 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/5"
+            aria-pressed="false"
+            aria-controls="instructions"
+            aria-label="Toggle images in instructions"
+          >
+            Hide images
+          </button>
+        </div>
+
+        <ol>
           {post.data.instructions.map(([instr, img]) => (
-            <li class="ml-6 list-disc marker:text-black py-1.5 text-sm">
+            <li class="ml-6 list-number marker:text-black py-1.5 text-sm">
               {instr}
               {img && <ExpandableImage src={img} alt={instr} />}
             </li>
           ))}
-        </ul>
+        </ol>
       </section>
+      <style>
+        /* Hide images when data-images-hidden is true */
+        #instructions[data-images-hidden="true"] img {
+          display: none !important;
+        }
+      </style>
+      <script>
+        (function () {
+          const section = document.getElementById('instructions');
+          const toggleBtn = document.getElementById('toggle-images-btn');
+          if (!section || !toggleBtn) return;
+          const images = section.querySelectorAll('img');
+          if (!images || images.length === 0) {
+            // No images in this section: hide the toggle
+            toggleBtn.style.display = 'none';
+            return;
+          }
+
+          // Initial state - images are shown; restore from localStorage if set
+          let imagesHidden = false;
+          try {
+            const stored = localStorage.getItem('hideInstrImages');
+            if (stored !== null) imagesHidden = stored === 'true';
+          } catch (_) {
+            // ignore localStorage errors
+          }
+
+          function updateImages() {
+            images.forEach((img) => {
+              img.style.display = imagesHidden ? 'none' : '';
+            });
+          }
+
+          updateImages();
+          updateButton();
+
+          function updateButton() {
+            toggleBtn!.setAttribute('aria-pressed', imagesHidden ? 'true' : 'false');
+            toggleBtn!.textContent = imagesHidden ? 'Show images' : 'Hide images';
+            section!.setAttribute('data-images-hidden', imagesHidden ? 'true' : 'false');
+          }
+
+          toggleBtn.addEventListener('click', () => {
+            imagesHidden = !imagesHidden;
+            updateButton();
+            updateImages();
+            try { localStorage.setItem('hideInstrImages', imagesHidden ? 'true' : 'false'); } catch (_) {}
+          });
+        })();
+      </script>
       <Content />
       <div class="mt-24">
         <PostNavigation prevPost={prevPost} nextPost={nextPost} />
