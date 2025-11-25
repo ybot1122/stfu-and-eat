@@ -134,7 +134,7 @@ const { Content, headings } = await render(post);
           const section = document.getElementById('instructions');
           const toggleBtn = document.getElementById('toggle-images-btn');
           if (!section || !toggleBtn) return;
-          const images = section.querySelectorAll('img');
+          const images = section.querySelectorAll('.expandable-image');
           if (!images || images.length === 0) {
             // No images in this section: hide the toggle
             toggleBtn.style.display = 'none';
