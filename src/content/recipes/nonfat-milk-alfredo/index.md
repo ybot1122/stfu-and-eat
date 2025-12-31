@@ -9,7 +9,7 @@ tags:
   - sauce
 ingredients:
   - [2, 'cup', 'Nonfat Milk']
-  - [1, 'tbsp', 'Cornstarch']
+  - [2, 'tbsp', 'Cornstarch']
   - [1, 'tsp', 'Minced Garlic']
   - [100, 'g', 'Grated Parmesan']
   - [1, 'tsp', 'Salt + Pepper']
